@@ -1,3 +1,4 @@
 from django.db import models
 
-# Create your models here.
+class categoria(models.Model):
+    descricao = models.CharField(max_length=50)
