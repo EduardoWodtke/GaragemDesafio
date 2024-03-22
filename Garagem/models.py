@@ -17,3 +17,6 @@ class Cor(models.Model):
 class Acessorio(models.Model):
     descricao = models.CharField(max_length=50)
 
+class Veiculo(models.Model):
+    cor = models.ForeignKey(Cor, on_delete=models.PROTECT, related_name="Veiculo", null=False)
+
